@@ -1,4 +1,4 @@
-import { selectionAlgo } from "./algorithms.module.js"
+import { selectionContent } from "./component.module.js"
 
 export function selectAlgo(id) {
 
@@ -11,7 +11,7 @@ export function selectAlgo(id) {
 
     switch (id) {
         case "Selection":
-            wrapper.appendChild(selectionAlgo());
+            selectionContent()
             break;
 
         default:

@@ -99,6 +99,7 @@ ul {
 
 .next {
     background-color: #F9F871;
+    text-wrap: nowrap;
     margin-top: 30px;
     margin-left: 35px;
     width: 150px;
@@ -106,7 +107,6 @@ ul {
 }
 
 .next:hover {
-    background-color: #cece40;
     transition: background-color 0.5s ease-in-out;
 
 }
@@ -204,6 +204,6 @@ input::-webkit-inner-spin-button {
 }
 
 .numInput:focus {
-    background-color: #E16B4D;
+    background-color: #AE2F54;
     border: none;
 }

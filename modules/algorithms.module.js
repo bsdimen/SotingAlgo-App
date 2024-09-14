@@ -1,11 +1,20 @@
-export function selectionAlgo() {
-    const container = document.getElementById("container")
-    const heading = document.getElementById("heading1")
-    const paragraph = document.getElementById("firstParaghraph")
+export function selectionAlgo(array) {
+
+    let smallest;
+    for (let i = 0; i < array.length; i++) {
+        smallest = i;
+        for (let j = i + 1; j < array.length; j++) {
+
+            if (array[j] < array[smallest]) {
+                smallest = j
+            }
+
+        }
+        [array[i], array[smallest]] = [array[smallest], array[i]];
 
 
-    heading.textContent = "Selection Algorithm";
-    paragraph.textContent = "First Let choose the size of our array";
+    }
+    console.log("finish " + array)
 
 
 }
